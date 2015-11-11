@@ -46,6 +46,6 @@ class EquilateralTraingle: NamedShape {
     }
     
     override func simpleDescription() -> String {
-        return "An equilateral triagle with sides of length \(sideLength))."
+        return "An equilateral triagle with sides of length \(sideLength)).name:\(super.name) "
     }
 }
