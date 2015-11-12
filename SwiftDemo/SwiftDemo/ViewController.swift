@@ -32,15 +32,38 @@ class ViewController: UIViewController {
 //        triangle.perimeter = 9.9
 //        print(triangle.sideLength)
         
-     
-        var string = "str1"
-        string += " is string type"
-        print(string)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func minMax(array:[Int]) ->(min:Int,max:Int)?{
+        if array.isEmpty{
+            return nil
+        }
+        var currentMin = array[0]
+        var currentMax = array[0]
+        for value in array[1..<array.count]{
+            if value < currentMin{
+                currentMin =  value
+            }
+            else if value > currentMax{
+                currentMax = value
+            }
+        }
+        return (currentMin,currentMax)
+        
+    }
+    
+    func printAndCount(stringToPrint: String) -> Int {
+        print(stringToPrint)
+        return stringToPrint.characters.count
+    }
+    
+    func sayGoodbye(personName:String){
+        print("Goodbye,\(personName)!")
     }
 
     // 函数
@@ -125,6 +148,56 @@ class ViewController: UIViewController {
         let http200Status = (statusCode:200,description:"OK")
         print("The status code is \(http200Status.statusCode)")
         print("The status message is \(http200Status.description)")
+    }
+    
+    // 数组
+    func ArrayFunc(){
+        let someInts = [Int]()
+        print("someInts is of type[Int] with \(someInts.count)Items")
+        
+        let threeDoubles = [Double](count: 3, repeatedValue: 0.0)
+        print(threeDoubles)
+        
+        let anotherTheeDoubles = [Double](count: 3, repeatedValue: 2.5)
+        print(anotherTheeDoubles)
+        
+        let sixDoubles = threeDoubles + anotherTheeDoubles
+        print(sixDoubles)
+        
+        var shoppingList = ["eggs","Milk"]
+        shoppingList.append("apples")
+        print(shoppingList)
+    }
+    
+    // 字典
+    func DictionaryFunc(){
+        var airports:[String:String] = ["YYZ":"Toronto Pearson","DUB":"Dublin"]
+        airports["LHR"] = "London"
+        airports["LHR"] = "London Heathrow"
+        print(airports)
+        
+        if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB"){
+            print("The old value for DUB was \(oldValue).")
+        }
+        
+        if let airportName = airports["DUB"] {
+            print("The name of the airport is \(airportName).")
+        } else {
+            print("That airport is not in the airports dictionary.")
+        }
+        
+        for (airpotCode,airportName) in airports{
+            print("\(airpotCode):\(airportName)")
+        }
+        
+        for airportCode in airports.keys{
+            print("Airport code:\(airportCode)")
+        }
+        
+        for airportName in airports.values{
+            print("Airport Name:\(airportName)")
+        }
+        
     }
     
 }
