@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5690201BFF2BAD003424D7 /* OnOffSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56901F1BFF2BAD003424D7 /* OnOffSwitch.swift */; };
+		FA8D20DD1BFC215B007F0D69 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20DC1BFC215B007F0D69 /* People.swift */; };
+		FA8D20DF1BFC6548007F0D69 /* VidoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20DE1BFC6548007F0D69 /* VidoMode.swift */; };
+		FA8D20E11BFC856C007F0D69 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20E01BFC856C007F0D69 /* Vehicle.swift */; };
+		FA8D20E31BFC86FD007F0D69 /* Bicycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20E21BFC86FD007F0D69 /* Bicycle.swift */; };
+		FA8D20E51BFC8AB3007F0D69 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20E41BFC8AB3007F0D69 /* Train.swift */; };
+		FA8D20E71BFC8B87007F0D69 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20E61BFC8B87007F0D69 /* Car.swift */; };
+		FA8D20E81BFC8C32007F0D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE3C1BF08091009FCE4F /* ViewController.swift */; };
+		FA8D20EA1BFC8DA7007F0D69 /* AutomaticCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20E91BFC8DA7007F0D69 /* AutomaticCar.swift */; };
+		FA8D20EC1BFEC950007F0D69 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20EB1BFEC950007F0D69 /* Food.swift */; };
+		FA8D20EE1BFECBF2007F0D69 /* RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20ED1BFECBF2007F0D69 /* RecipeIngredient.swift */; };
+		FA8D20F01BFECF5C007F0D69 /* ShoppingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20EF1BFECF5C007F0D69 /* ShoppingListItem.swift */; };
+		FA8D20F21BFF1048007F0D69 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20F11BFF1048007F0D69 /* Person.swift */; };
+		FA8D20F41BFF22AD007F0D69 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20F31BFF22AD007F0D69 /* Starship.swift */; };
+		FA8D20F61BFF26D2007F0D69 /* LinearCongruentialGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D20F51BFF26D2007F0D69 /* LinearCongruentialGenerator.swift */; };
 		FAA7CE3B1BF08091009FCE4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE3A1BF08091009FCE4F /* AppDelegate.swift */; };
 		FAA7CE3D1BF08091009FCE4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE3C1BF08091009FCE4F /* ViewController.swift */; };
 		FAA7CE401BF08091009FCE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA7CE3E1BF08091009FCE4F /* Main.storyboard */; };
@@ -16,6 +31,12 @@
 		FAA7CE5B1BF08091009FCE4F /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE5A1BF08091009FCE4F /* SwiftDemoUITests.swift */; };
 		FAA7CE691BF09880009FCE4F /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE681BF09880009FCE4F /* Shape.swift */; };
 		FAA7CE6B1BF0A034009FCE4F /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7CE6A1BF0A034009FCE4F /* Square.swift */; };
+		FAC2F5301C055F8100BC6EF0 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F52F1C055F8100BC6EF0 /* Login.swift */; };
+		FAC495871C04354800AF80CD /* count.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC495861C04354800AF80CD /* count.swift */; };
+		FAC495891C043AB700AF80CD /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC495881C043AB700AF80CD /* Rect.swift */; };
+		FAC4958B1C043DA400AF80CD /* ExensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4958A1C043DA400AF80CD /* ExensionInt.swift */; };
+		FAC495AD1C04463200AF80CD /* TableViewAutoRowHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC495AC1C04463200AF80CD /* TableViewAutoRowHeightTests.m */; };
+		FAC495B81C04463200AF80CD /* TableViewAutoRowHeightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC495B71C04463200AF80CD /* TableViewAutoRowHeightUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +54,37 @@
 			remoteGlobalIDString = FAA7CE361BF08091009FCE4F;
 			remoteInfo = SwiftDemo;
 		};
+		FAC495A91C04463200AF80CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA7CE2F1BF08091009FCE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC4958F1C04463200AF80CD;
+			remoteInfo = TableViewAutoRowHeight;
+		};
+		FAC495B41C04463200AF80CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA7CE2F1BF08091009FCE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC4958F1C04463200AF80CD;
+			remoteInfo = TableViewAutoRowHeight;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA56901F1BFF2BAD003424D7 /* OnOffSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnOffSwitch.swift; sourceTree = "<group>"; };
+		FA8D20DC1BFC215B007F0D69 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		FA8D20DE1BFC6548007F0D69 /* VidoMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidoMode.swift; sourceTree = "<group>"; };
+		FA8D20E01BFC856C007F0D69 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		FA8D20E21BFC86FD007F0D69 /* Bicycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bicycle.swift; sourceTree = "<group>"; };
+		FA8D20E41BFC8AB3007F0D69 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		FA8D20E61BFC8B87007F0D69 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		FA8D20E91BFC8DA7007F0D69 /* AutomaticCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticCar.swift; sourceTree = "<group>"; };
+		FA8D20EB1BFEC950007F0D69 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		FA8D20ED1BFECBF2007F0D69 /* RecipeIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
+		FA8D20EF1BFECF5C007F0D69 /* ShoppingListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItem.swift; sourceTree = "<group>"; };
+		FA8D20F11BFF1048007F0D69 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA8D20F31BFF22AD007F0D69 /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		FA8D20F51BFF26D2007F0D69 /* LinearCongruentialGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearCongruentialGenerator.swift; sourceTree = "<group>"; };
 		FAA7CE371BF08091009FCE4F /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA7CE3A1BF08091009FCE4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA7CE3C1BF08091009FCE4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +100,17 @@
 		FAA7CE5C1BF08091009FCE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA7CE681BF09880009FCE4F /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		FAA7CE6A1BF0A034009FCE4F /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		FAC2F52F1C055F8100BC6EF0 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FAC495861C04354800AF80CD /* count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = count.swift; sourceTree = "<group>"; };
+		FAC495881C043AB700AF80CD /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		FAC4958A1C043DA400AF80CD /* ExensionInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExensionInt.swift; sourceTree = "<group>"; };
+		FAC495901C04463200AF80CD /* TableViewAutoRowHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewAutoRowHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC495A81C04463200AF80CD /* TableViewAutoRowHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewAutoRowHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC495AC1C04463200AF80CD /* TableViewAutoRowHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoRowHeightTests.m; sourceTree = "<group>"; };
+		FAC495AE1C04463200AF80CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC495B31C04463200AF80CD /* TableViewAutoRowHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewAutoRowHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC495B71C04463200AF80CD /* TableViewAutoRowHeightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoRowHeightUITests.m; sourceTree = "<group>"; };
+		FAC495B91C04463200AF80CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +135,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAC4958D1C04463200AF80CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495A51C04463200AF80CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495B01C04463200AF80CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +165,8 @@
 				FAA7CE391BF08091009FCE4F /* SwiftDemo */,
 				FAA7CE4E1BF08091009FCE4F /* SwiftDemoTests */,
 				FAA7CE591BF08091009FCE4F /* SwiftDemoUITests */,
+				FAC495AB1C04463200AF80CD /* TableViewAutoRowHeightTests */,
+				FAC495B61C04463200AF80CD /* TableViewAutoRowHeightUITests */,
 				FAA7CE381BF08091009FCE4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +177,9 @@
 				FAA7CE371BF08091009FCE4F /* SwiftDemo.app */,
 				FAA7CE4B1BF08091009FCE4F /* SwiftDemoTests.xctest */,
 				FAA7CE561BF08091009FCE4F /* SwiftDemoUITests.xctest */,
+				FAC495901C04463200AF80CD /* TableViewAutoRowHeight.app */,
+				FAC495A81C04463200AF80CD /* TableViewAutoRowHeightTests.xctest */,
+				FAC495B31C04463200AF80CD /* TableViewAutoRowHeightUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +195,24 @@
 				FAA7CE411BF08091009FCE4F /* Assets.xcassets */,
 				FAA7CE431BF08091009FCE4F /* LaunchScreen.storyboard */,
 				FAA7CE461BF08091009FCE4F /* Info.plist */,
+				FA8D20DC1BFC215B007F0D69 /* People.swift */,
+				FA8D20DE1BFC6548007F0D69 /* VidoMode.swift */,
+				FA8D20E01BFC856C007F0D69 /* Vehicle.swift */,
+				FA8D20E21BFC86FD007F0D69 /* Bicycle.swift */,
+				FA8D20E41BFC8AB3007F0D69 /* Train.swift */,
+				FA8D20E61BFC8B87007F0D69 /* Car.swift */,
+				FA8D20E91BFC8DA7007F0D69 /* AutomaticCar.swift */,
+				FA8D20EB1BFEC950007F0D69 /* Food.swift */,
+				FA8D20ED1BFECBF2007F0D69 /* RecipeIngredient.swift */,
+				FA8D20EF1BFECF5C007F0D69 /* ShoppingListItem.swift */,
+				FA8D20F11BFF1048007F0D69 /* Person.swift */,
+				FA8D20F31BFF22AD007F0D69 /* Starship.swift */,
+				FA8D20F51BFF26D2007F0D69 /* LinearCongruentialGenerator.swift */,
+				FA56901F1BFF2BAD003424D7 /* OnOffSwitch.swift */,
+				FAC495861C04354800AF80CD /* count.swift */,
+				FAC495881C043AB700AF80CD /* Rect.swift */,
+				FAC4958A1C043DA400AF80CD /* ExensionInt.swift */,
+				FAC2F52F1C055F8100BC6EF0 /* Login.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -129,6 +233,24 @@
 				FAA7CE5C1BF08091009FCE4F /* Info.plist */,
 			);
 			path = SwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		FAC495AB1C04463200AF80CD /* TableViewAutoRowHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC495AC1C04463200AF80CD /* TableViewAutoRowHeightTests.m */,
+				FAC495AE1C04463200AF80CD /* Info.plist */,
+			);
+			path = TableViewAutoRowHeightTests;
+			sourceTree = "<group>";
+		};
+		FAC495B61C04463200AF80CD /* TableViewAutoRowHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC495B71C04463200AF80CD /* TableViewAutoRowHeightUITests.m */,
+				FAC495B91C04463200AF80CD /* Info.plist */,
+			);
+			path = TableViewAutoRowHeightUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +309,59 @@
 			productReference = FAA7CE561BF08091009FCE4F /* SwiftDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FAC4958F1C04463200AF80CD /* TableViewAutoRowHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC495BA1C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeight" */;
+			buildPhases = (
+				FAC4958C1C04463200AF80CD /* Sources */,
+				FAC4958D1C04463200AF80CD /* Frameworks */,
+				FAC4958E1C04463200AF80CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewAutoRowHeight;
+			productName = TableViewAutoRowHeight;
+			productReference = FAC495901C04463200AF80CD /* TableViewAutoRowHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC495A71C04463200AF80CD /* TableViewAutoRowHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC495BD1C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeightTests" */;
+			buildPhases = (
+				FAC495A41C04463200AF80CD /* Sources */,
+				FAC495A51C04463200AF80CD /* Frameworks */,
+				FAC495A61C04463200AF80CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC495AA1C04463200AF80CD /* PBXTargetDependency */,
+			);
+			name = TableViewAutoRowHeightTests;
+			productName = TableViewAutoRowHeightTests;
+			productReference = FAC495A81C04463200AF80CD /* TableViewAutoRowHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC495B21C04463200AF80CD /* TableViewAutoRowHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC495C01C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeightUITests" */;
+			buildPhases = (
+				FAC495AF1C04463200AF80CD /* Sources */,
+				FAC495B01C04463200AF80CD /* Frameworks */,
+				FAC495B11C04463200AF80CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC495B51C04463200AF80CD /* PBXTargetDependency */,
+			);
+			name = TableViewAutoRowHeightUITests;
+			productName = TableViewAutoRowHeightUITests;
+			productReference = FAC495B31C04463200AF80CD /* TableViewAutoRowHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +383,17 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = FAA7CE361BF08091009FCE4F;
 					};
+					FAC4958F1C04463200AF80CD = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					FAC495A71C04463200AF80CD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FAC4958F1C04463200AF80CD;
+					};
+					FAC495B21C04463200AF80CD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FAC4958F1C04463200AF80CD;
+					};
 				};
 			};
 			buildConfigurationList = FAA7CE321BF08091009FCE4F /* Build configuration list for PBXProject "SwiftDemo" */;
@@ -226,6 +412,9 @@
 				FAA7CE361BF08091009FCE4F /* SwiftDemo */,
 				FAA7CE4A1BF08091009FCE4F /* SwiftDemoTests */,
 				FAA7CE551BF08091009FCE4F /* SwiftDemoUITests */,
+				FAC4958F1C04463200AF80CD /* TableViewAutoRowHeight */,
+				FAC495A71C04463200AF80CD /* TableViewAutoRowHeightTests */,
+				FAC495B21C04463200AF80CD /* TableViewAutoRowHeightUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +444,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAC4958E1C04463200AF80CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495A61C04463200AF80CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495B11C04463200AF80CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,10 +472,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC4958B1C043DA400AF80CD /* ExensionInt.swift in Sources */,
+				FA8D20F21BFF1048007F0D69 /* Person.swift in Sources */,
+				FA8D20F61BFF26D2007F0D69 /* LinearCongruentialGenerator.swift in Sources */,
+				FA8D20EA1BFC8DA7007F0D69 /* AutomaticCar.swift in Sources */,
+				FAC495891C043AB700AF80CD /* Rect.swift in Sources */,
+				FA8D20DF1BFC6548007F0D69 /* VidoMode.swift in Sources */,
 				FAA7CE6B1BF0A034009FCE4F /* Square.swift in Sources */,
+				FA8D20E71BFC8B87007F0D69 /* Car.swift in Sources */,
 				FAA7CE3D1BF08091009FCE4F /* ViewController.swift in Sources */,
+				FAC2F5301C055F8100BC6EF0 /* Login.swift in Sources */,
+				FA8D20EC1BFEC950007F0D69 /* Food.swift in Sources */,
+				FA5690201BFF2BAD003424D7 /* OnOffSwitch.swift in Sources */,
+				FA8D20F41BFF22AD007F0D69 /* Starship.swift in Sources */,
+				FA8D20E31BFC86FD007F0D69 /* Bicycle.swift in Sources */,
 				FAA7CE691BF09880009FCE4F /* Shape.swift in Sources */,
+				FA8D20EE1BFECBF2007F0D69 /* RecipeIngredient.swift in Sources */,
+				FA8D20E11BFC856C007F0D69 /* Vehicle.swift in Sources */,
+				FAC495871C04354800AF80CD /* count.swift in Sources */,
+				FA8D20F01BFECF5C007F0D69 /* ShoppingListItem.swift in Sources */,
 				FAA7CE3B1BF08091009FCE4F /* AppDelegate.swift in Sources */,
+				FA8D20E51BFC8AB3007F0D69 /* Train.swift in Sources */,
+				FA8D20DD1BFC215B007F0D69 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +509,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D20E81BFC8C32007F0D69 /* ViewController.swift in Sources */,
 				FAA7CE5B1BF08091009FCE4F /* SwiftDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4958C1C04463200AF80CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495A41C04463200AF80CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC495AD1C04463200AF80CD /* TableViewAutoRowHeightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC495AF1C04463200AF80CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC495B81C04463200AF80CD /* TableViewAutoRowHeightUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +549,16 @@
 			isa = PBXTargetDependency;
 			target = FAA7CE361BF08091009FCE4F /* SwiftDemo */;
 			targetProxy = FAA7CE571BF08091009FCE4F /* PBXContainerItemProxy */;
+		};
+		FAC495AA1C04463200AF80CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC4958F1C04463200AF80CD /* TableViewAutoRowHeight */;
+			targetProxy = FAC495A91C04463200AF80CD /* PBXContainerItemProxy */;
+		};
+		FAC495B51C04463200AF80CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC4958F1C04463200AF80CD /* TableViewAutoRowHeight */;
+			targetProxy = FAC495B41C04463200AF80CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -471,6 +733,76 @@
 			};
 			name = Release;
 		};
+		FAC495BB1C04463200AF80CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewAutoRowHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAC495BC1C04463200AF80CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewAutoRowHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAC495BE1C04463200AF80CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TableViewAutoRowHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewAutoRowHeight.app/TableViewAutoRowHeight";
+			};
+			name = Debug;
+		};
+		FAC495BF1C04463200AF80CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TableViewAutoRowHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewAutoRowHeight.app/TableViewAutoRowHeight";
+			};
+			name = Release;
+		};
+		FAC495C11C04463200AF80CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableViewAutoRowHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TableViewAutoRowHeight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAC495C21C04463200AF80CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableViewAutoRowHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.TableViewAutoRowHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TableViewAutoRowHeight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +822,7 @@
 				FAA7CE611BF08091009FCE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAA7CE621BF08091009FCE4F /* Build configuration list for PBXNativeTarget "SwiftDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +831,7 @@
 				FAA7CE641BF08091009FCE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAA7CE651BF08091009FCE4F /* Build configuration list for PBXNativeTarget "SwiftDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +840,34 @@
 				FAA7CE671BF08091009FCE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC495BA1C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC495BB1C04463200AF80CD /* Debug */,
+				FAC495BC1C04463200AF80CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC495BD1C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC495BE1C04463200AF80CD /* Debug */,
+				FAC495BF1C04463200AF80CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC495C01C04463200AF80CD /* Build configuration list for PBXNativeTarget "TableViewAutoRowHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC495C11C04463200AF80CD /* Debug */,
+				FAC495C21C04463200AF80CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

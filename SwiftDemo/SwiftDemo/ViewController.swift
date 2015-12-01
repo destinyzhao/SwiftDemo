@@ -32,11 +32,219 @@ class ViewController: UIViewController {
 //        triangle.perimeter = 9.9
 //        print(triangle.sideLength)
         
+//        let sqliteLogManager = SqliteLogManager()
+//        userController.delegate = sqliteLogManager
+//        userController.login()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // 结构体的逐一成员构造器&值类型的构造器代理
+    /*
+    let twoByTwo = Size(width: 2.0, height: 2.0)
+    print(twoByTwo)
+    
+    let basicRect = Rect()
+    print(basicRect)
+    let originRect = Rect(origin: Point(x: 2.0, y: 2.0), size: Size(width: 5.0, height: 5.0))
+    print(originRect)
+    let centerRect = Rect(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, height: 3.0))
+    print(centerRect)
+    */
+    struct Size{
+        var width = 0.0,height = 0.0
+    }
+    struct Point {
+        var x = 0.0,y = 0.0
+    }
+    struct Rect {
+        var origin = Point()
+        var size = Size()
+        init(){}
+        init(origin:Point,size:Size){
+            self.origin = origin
+            self.size = size
+        }
+        init(center:Point,size:Size){
+            let originX = center.x - (size.width/2)
+            let originY = center.y - (size.height/2)
+            self.init(origin:Point(x:originX,y: originY),size:size)
+        }
+    }
+    
+    // 可选属性类型
+    /*
+    let cheeseQuestion = SurveyQuestion(text: "Do you like cheese?")
+    print(cheeseQuestion.ask())
+    cheeseQuestion.response = "Yes, l do like cheese"
+    print(cheeseQuestion.response)
+    */
+    class SurveyQuestion {
+        let text:String        // 构造过程中常量属性的修改
+        var response:String?
+        init(text:String){
+            self.text = text
+        }
+        func ask(){
+            print(text)
+        }
+    }
+    
+    // 构造器
+    /*
+    let f = Fahrenheit()
+    print("The default temperature is \(f.temperature) ° Fahrenheit")
+    */
+    struct Fahrenheit {
+        var temperature:Double
+        init(){
+            temperature = 32.0
+        }
+    }
+    
+    // 构造参数
+    /*
+    let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+    print("沸腾水的温度是:\(boilingPointOfWater.temperatureInCelsius)")
+    let freezingPointWater = Celsius(fromKelvin: 273.15)
+    print("冰点水的温度:\(freezingPointWater.temperatureInCelsius)")
+    let bodyTemperature = Celsius(37.0)
+    print(bodyTemperature.temperatureInCelsius)
+    */
+    struct Celsius {
+        var temperatureInCelsius:Double = 0.0
+       
+        init(fromFahrenheit fahrenheit:Double){
+            temperatureInCelsius = (fahrenheit - 32.0)/1.8
+        }
+        init(fromKelvin kelvin:Double){
+            temperatureInCelsius = kelvin - 273.15
+        }
+        // 不带外部名的构造参数
+        init(_ celsius:Double){
+            temperatureInCelsius = celsius
+        }
+    }
+    
+    // 构造参数的内部名称和外部名称
+    /*
+    let magenta = Color(red: 1.0, green: 0.0, blue: 1.0)
+    print(magenta)
+    let halfGray = Color(white: 0.5)
+    print(halfGray)
+    */
+    struct Color {
+        let red,green,blue:Double
+        init(red:Double,green:Double,blue:Double){
+            self.red = red
+            self.green = green
+            self.blue = blue
+        }
+        init(white:Double){
+            red = white
+            green = white
+            blue = white
+        }
+    }
+    
+    // map用于将每个数组元素通过某个方法进行转换。
+    /*
+    let a = [1,2,3,4,5]
+    let b = a.map(fx)
+    print(a,b)
+    */
+    func fx(x:Int) -> Int{
+        return x + 10
+    }
+    
+    // 闭包
+    /*
+    let guestList = ["chris","Jill","Tim"]
+    let fullGreetings = guestList.map({(person:String) -> String in return "Hello,\(person)!" })
+    let fullGreetings = guestList.map({(person) -> String in return "Hello,\(person)!"})
+    let fullGreetings = guestList.map({person in "Hello,\(person)!"})
+    let fullGreetings = guestList.map({"Hello,\($0)"})
+    let fullGreetings = guestList.map(){"Hello,\($0)"}
+    let fullGreetings = guestList.map{"Hello,\($0)"}
+    */
+    func greetPeople(person:String) -> String{
+        return "Hello,\(person)!"
+    }
+    
+    func bibaoFunction(){
+        let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+        //let reversed = names.sort({(s1:String,s2:String) -> Bool in return s1 > s2})
+        //let reversed = names.sort(){s1,s2 in s1 > s2}
+        let reversed = names.sort{ $0 > $1 }
+        print(reversed)
+    }
+    /*
+    let digitNames = [0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"]
+    let numbers = [16, 58, 510]
+    let strings = numbers.map{(var number) -> String in var output = ""
+        while number > 0{
+        output = digitNames[number % 10]! + output
+        number /= 10
+        }
+        return output
+    }
+    print(strings)
+    */
+    
+    /*
+    let incrementByTen = makeIncrementor(forIncrement: 10)
+    print(incrementByTen())
+    */
+    func makeIncrementor(forIncrement amount:Int) -> () -> Int{
+        var runningTotal = 10
+        func incrementor() -> Int{
+            runningTotal += amount
+            return runningTotal
+        }
+        return incrementor
+    }
+    
+    // 函数类型作为返回类型
+    func stepForward(input:Int) -> Int{
+        print("1")
+        return input + 1
+    }
+    func stepBackward(input:Int) -> Int{
+        print("2")
+        return input - 1
+    }
+    func chooseStepFunction(backwards: Bool) -> (Int) -> Int {
+        return backwards ? stepBackward : stepForward
+    }
+    
+    // 函数类型
+    func addTwoInts(a:Int, b:Int) -> Int{
+        return a + b
+    }
+
+    // 输入输出参数
+    func swapTwoInts(inout a:Int,inout _ b:Int){
+        let temporaryA = a
+        a = b
+        b = temporaryA
+    }
+    
+    // 默认参数
+    func someFunction(parameterWithDefault:Int = 12){
+        print(parameterWithDefault);
+    }
+    
+    // 可变参数
+    func arithmeticMean(numbers:Double...) ->Double{
+        var total:Double = 0
+        for number in numbers{
+            total += number
+        }
+        return total / Double(numbers.count)
     }
     
     func minMax(array:[Int]) ->(min:Int,max:Int)?{
@@ -107,6 +315,14 @@ class ViewController: UIViewController {
         }
         add()
         return y
+    }
+    
+    func returnFIfteen1(number:Int) -> Int{
+        var y = number
+        func add(num:Int) -> Int{
+           return num + 5
+        }
+        return add(y)
     }
 
     // 函数是第一等类型,这意味着函数可以作为另一个函数的返回值。
